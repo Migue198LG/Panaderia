@@ -1,0 +1,59 @@
+body {
+    background-color: #fff8e1; /* Color de fondo cálido */
+    color: #333; /* Color de texto */
+}
+
+.header {
+    background-image: url(panaderia2xd.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    font-family: 'Cursive', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallery img {
+    max-height: 150px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.table-responsive {
+    max-height: 400px;
+}
+
+.modal-header {
+    background-color: #f39c12; /* Color de encabezado del modal */
+    color: #fff; /* Color de texto del encabezado */
+}
+
+.footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+}
+
+.btn-light {
+    background-color: #f8c471; /* Botones con color acorde a la temática */
+    color: #333;
+}
+
+/* Estilos específicos para Día de Muertos y Halloween */
+.day-of-the-dead {
+    background-image: url(panaderia2xd.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.halloween {
+    background-color: #ff8c00; /* Color de fondo para Halloween */
+}
