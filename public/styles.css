@@ -1,59 +1,139 @@
+/* Estilo base */
 body {
-    background-color: #fff8e1; /* Color de fondo cálido */
-    color: #333; /* Color de texto */
+    background-color: #fdf4e4;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
+/* Encabezado */
 .header {
-    background-image: url(panaderia2xd.jpg);
+    background-image: url("panaderia2xd.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    padding: 70px 0;
 }
 
 .header h1 {
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Georgia', serif;
     text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
+.header p {
+    font-size: 1.25rem;
+}
+
+.btn-light {
+    background-color: #ffa726;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Galería */
 .gallery img {
     max-height: 150px;
     border-radius: 10px;
     transition: transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img:hover {
     transform: scale(1.05);
 }
 
+/* Tabla de Inventario */
 .table-responsive {
-    max-height: 400px;
+    max-height: 500px;
+    margin-top: 20px;
 }
 
-.modal-header {
-    background-color: #f39c12; /* Color de encabezado del modal */
-    color: #fff; /* Color de texto del encabezado */
-}
-
-.footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #fff; /* Color de texto del pie de página */
-}
-
-.btn-light {
-    background-color: #f8c471; /* Botones con color acorde a la temática */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
     color: #333;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos específicos para Día de Muertos y Halloween */
-.day-of-the-dead {
-    background-image: url(panaderia2xd.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0;
+.table thead {
+    background-color: #ff7043;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.table tbody tr:hover {
+    background-color: #ffe0b2;
+    cursor: pointer;
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    background-color: #ff7043;
     color: #fff;
 }
 
-.halloween {
-    background-color: #ff8c00; /* Color de fondo para Halloween */
+.table-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal-header {
+    background-color: #f39c12;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Botones */
+.btn-light {
+    background-color: #f8c471;
+    color: #333;
+}
+
+/* Estilos adicionales */
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.15rem;
+    font-weight: 300;
 }
